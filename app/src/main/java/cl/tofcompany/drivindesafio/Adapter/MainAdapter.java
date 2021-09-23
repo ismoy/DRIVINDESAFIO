@@ -52,12 +52,12 @@ public class MainAdapter extends RecyclerView.Adapter<MainAdapter.ViewHolder> {
         holder.itemView.setOnClickListener(v -> {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-            builder.setMessage("Perdon no he logrado capturar los" +
-                            "nombres de esta raza no estaba bien claro la " +
-                            "documentacion de la api la position de" +
-                            "este imagen es " + position)
+            builder.setMessage("Perdon no he logrado capturar los " +
+                            " nombres de esta raza no estaba bien claro la " +
+                            " documentacion de la api, la position de " +
+                            " este imagen es " + position)
                     .setCancelable(false)
-                    .setPositiveButton("OK", (dialogInterface, i) -> activity.getApplicationContext()).create().show();
+                    .setPositiveButton("DAME ANIMO", (dialogInterface, i) -> activity.getApplicationContext()).create().show();
         });
 
     }
